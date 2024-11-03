@@ -41,3 +41,4 @@ WHERE (b."LastUpdated", b."Id") > ('2024-12-03', 31)
 ORDER BY b."LastUpdated", b."Id"
 LIMIT 10;
 
+-- for best performace index should match the order by clause

@@ -60,10 +60,10 @@ var someBlogs = await ctx.Blogs
 Query in PostgreSQL
 ```sql
 SELECT b."Id", b."LastUpdated", b."Name"
-	FROM "Blogs" AS b
-	WHERE b."Id" > 20
-    ORDER BY b."Id"
-    LIMIT @__p_0
+FROM "Blogs" AS b
+WHERE b."Id" > 20
+ORDER BY b."Id"
+LIMIT @__p_0
 ```
 
 ##### Problems
