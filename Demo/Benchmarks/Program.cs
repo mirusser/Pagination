@@ -11,7 +11,7 @@ BenchmarkRunner.Run<Benchmarks>();
 public class Benchmarks
 {
     private const string ConnectionString =
-        "Host=192.168.0.23;Username=postgres;Password=zaq1@WSX;Database=paginationdemo";
+        "Host=your_host;Username=your_user;Password=super_secret_password;Database=demo";
     private NpgsqlConnection _connection;
     
     [Params(20, 900000)]

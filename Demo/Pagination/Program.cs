@@ -22,7 +22,7 @@ public class BloggingContext : DbContext
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder
-            .UseNpgsql("Host=192.168.0.23;Username=postgres;Password=zaq1@WSX;Database=paginationdemo")
+            .UseNpgsql("Host=your_host;Username=your_user;Password=super_secret_password;Database=demo")
             .LogTo(Console.WriteLine, LogLevel.Information)
             .EnableSensitiveDataLogging();
 }
