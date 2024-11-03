@@ -32,7 +32,7 @@ Actual query (in PostgreSQL)
 SELECT b."Id", b."LastUpdated", b."Name"
 FROM "Blogs" AS b
 ORDER BY b."Id"
-LIMIT @__p_1 OFFSET @__p_0
+LIMIT 10 OFFSET 20
 ```
 
 ##### Problems
@@ -63,7 +63,7 @@ SELECT b."Id", b."LastUpdated", b."Name"
 FROM "Blogs" AS b
 WHERE b."Id" > 20
 ORDER BY b."Id"
-LIMIT @__p_0
+LIMIT 10
 ```
 
 ##### Problems
