@@ -10,7 +10,7 @@ This allows users to view data in segments instead of loading an entire data set
 > Did you know pagination with `offset` is very troublesome but easy to avoid?
 > -- <cite>Markus Winand</cite>
 
-> Skip is ==evil== in various ways; it's like `Sleep()` ... it makes your program pause/wait the bigger it is.
+> Skip is evil in various ways; it's like `Sleep()` ... it makes your program pause/wait the bigger it is.
 
 ##### Basic definition:
 This method uses a starting index (offset) and a count (limit) to specify which records to return.
@@ -26,7 +26,7 @@ var someBlogs = await ctx.Blogs
     .ToArrayAsync();
 ```
 
-Actual query (in ==PostgreSQL==)
+Actual query (in PostgreSQL)
 ```sql
 -- returns 10 records starting from the 21st record
 SELECT b."Id", b."LastUpdated", b."Name"
