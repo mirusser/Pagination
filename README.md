@@ -75,14 +75,14 @@ SELECT b."Id", b."LastUpdated", b."Name"
 ---
 ### Benchmarks
 
-![[pagination-benchmarks.png]]
+![pagination-benchmarks.png](https://github.com/mirusser/Pagination/blob/main/Pictures/pagination-benchmarks.png?raw=true)
 #### Key Takeaways
 - **Offset Pagination**: Fast for small offsets but scales poorly with larger datasets.
 - **Keyset Pagination**: Performs better with large datasets, as it doesn’t require scanning and skipping through rows.
 ---
 ### Graph
 
-![[offset-seek-graph.png]]
+![offset-seek-graph.png](https://github.com/mirusser/Pagination/blob/main/Pictures/offset-seek-graph.png?raw=true)
 
 If you wanna do any type pagination you wanna have well defined ordering (having an index/es on column/s), otherwise the performance gonna take a big hit.
 
